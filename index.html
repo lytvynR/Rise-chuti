@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<!DOCTYPE html>
+<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="./favicon.ico" rel="shortcut icon" type="image/x-icon" />
@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="./css/reset.css" type="text/css" media="all" />
     <link rel="stylesheet" href="./css/styles.css" type="text/css" media="all" />
-    <!--[if lte IE 7]><link rel="stylesheet" href="./css/ie.css" type="text/css"  media="all" /><![endif]-->
+   
    
     <script type="text/javascript" src="./js/jquery.core.pack.js"></script>
     <script type="text/javascript" src="./js/jquery.pngfix.pack.js"></script>
@@ -28,12 +28,34 @@
 <body>
     <div class="header">
        <div class="header_user_field">
-           <div class="header_serch">
-               <a href="#">ru | cz</a><br>
-               <img src="" name="header_srch_ico">
-               <p></p>
-           </div>
-           <div class="header_account"></div>
+           <img src="./images/main_logo.png" name="header_logo_ico" class="main_logo">
+              <div class="header_firstline">
+               <div>
+                 <a href="#" class="ru_language active_language">ru</a>
+                 <span class="header_line">|</span>
+                 <a href="#51515" class="cz_language">cz</a>
+               </div>
+                  
+                <div class="header_enter">
+                     <a href="#">
+                    <img src="./images/enter_ico.png" name="header_enter_ico">
+                    <span>Вход</span>
+                     </a>
+                </div>
+                </div>
+
+                <div class="header_secondline">
+                <div>
+                 <img src="./images/header_srch_ico.png" name="header_srch_ico">
+                 <span class="serch_item">поиск по сайту</span>
+               </div>
+                <div>
+                    <a href="#" class="cart empty">
+                    <img src="./images/cart_ico.png" name="header_cart_ico">
+                    <span>пусто</span>
+                    </a>
+                </div>
+                </div>
        </div>
        <div class= "main_menu"></div>
     </div>

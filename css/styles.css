@@ -4,23 +4,80 @@ body {
     font-family: Phenomena;
 }
 
+
+/*
+===================HEADER=====================
+*/
 .header {
     width: 1200px;
     min-width: 530px;
     min-height: 230px;
     margin: 0 auto;
+    margin-top: 5px;
 }
 .header_user_field {
+    position: relative;
+    background-color: #fff;
+    padding: 50px 15px 15px 15px;
+    box-sizing: border-box;
+    color: #658138;
+}
+.header_firstline {
     display: flex;
-    
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    min-height: 25px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}  
+
+.header_secondline {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    min-height: 40px;
+    box-sizing: border-box;
+}  
+.header_line {
+    vertical-align: middle;
 }
-.header_serch {
-    width: 50%;
-    min-height: 165px;
+.header_firstline .ru_language, .header_firstline .cz_language {
+    color: #fe9900;
+}
+.header_firstline .active_language {
+    color: #658138; 
 }
 
-.header_account {
-    width: 50%;
-    min-height: 165px;
-
+.header_firstline a{
+    display: inline-block;
+    text-decoration: none;
+    color: #658138; 
 }
+.header_secondline .cart{
+    color: #658138; 
+    text-decoration: none;
+}
+.header_secondline .empty{
+    color: gray;
+}
+
+.header_secondline .serch_item {
+    display: inline-block;
+    line-height: 25px;
+    vertical-align: top;
+}
+
+.main_logo {
+    position: absolute;
+    left: calc(50% - 92.5px);
+    top: 10px;
+}
+.header_user_field img {
+    margin-right: 5px;
+}
+
+/*
+===================MAIN MENU=====================
+*/

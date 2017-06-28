@@ -1,0 +1,26 @@
+body {
+    background: #fff;
+    font-size: 36px;
+    font-family: Phenomena;
+}
+
+.header {
+    width: 1200px;
+    min-width: 530px;
+    min-height: 230px;
+    margin: 0 auto;
+}
+.header_user_field {
+    display: flex;
+    
+}
+.header_serch {
+    width: 50%;
+    min-height: 165px;
+}
+
+.header_account {
+    width: 50%;
+    min-height: 165px;
+
+}

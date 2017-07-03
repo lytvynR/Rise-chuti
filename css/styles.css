@@ -112,8 +112,13 @@ body {
      position: relative;
      font-size: 36px;
  }
+ 
  .main-menu-item:hover {
-     text-decoration: underline #fff;
+      text-shadow:
+        -2px -2px 0 #360,
+        2px -2px 0 #360,
+        -2px 2px 0 #360,
+        2px 2px 0 #360;
  }
   .main-menu-item a{
      color: #fff;
@@ -351,7 +356,7 @@ outline: none;
  }
 
  .shares-header {
-     width: 28%;
+     width: 30%;
      margin: 10px auto;
      font-size: 36px;
      text-align: center;
@@ -381,6 +386,7 @@ outline: none;
  .manufacturers-slider {
      width: 100%;
      height: auto;
+     margin-bottom: 10px;
 
  }
  .manufacturers-slider-wrapper {
@@ -417,4 +423,100 @@ right: 5px;
     position: absolute;
     left: 5px;
     top: 35%;
+}
+
+/*
+    ================manufacturers slider====================
+ */
+
+ .footer {
+     width: 100%;
+     height: 100%;
+     padding: 0 15px 0 15px;
+     background: url(../images/footer_background.jpg) no-repeat center;
+     font-size: 30px;
+ }
+.main-footer-info {
+    
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 10px;
+    color: #fff;
+
+}
+
+.footer-schedule {
+    width: 26.6%;
+    height: auto;
+    position: relative;
+}
+.footer-schedule img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-contacts {
+    width: 28.2%;
+    margin-top: 7%;
+    margin-bottom: 20px;
+    position: relative;
+    min-width: 235px;
+}
+
+.footer-contacts img {
+    display: inline-block;
+    position: absolute;
+    top: -3S%;
+    left:0;
+}
+#footer-email-ico {
+    top: 60%;
+    left:0;
+}
+#footer-email, #footer-call-me {
+    margin-left: 55px;
+}
+#footer-phone-numbers {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.footer-menu {
+    width: 18.3%;
+    text-align: center;
+    margin-top: 7.15%;
+}
+.footer-menu a { 
+    text-decoration: none;
+    color: #fff;
+}
+.footer-menu a:hover {
+    text-shadow:
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+}
+
+.footer-logo {
+    width: 14.6%;
+    height: auto;
+    margin-top: 8%;
+}
+#footer-logo-ico {
+    width: 100%;
+    height: auto;
+}
+.foter-rights {
+    width: 40%;
+    font-size: 22px;
+    margin-top: 35px;
+    color: #fff;
+    opacity: 0.6;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
 }

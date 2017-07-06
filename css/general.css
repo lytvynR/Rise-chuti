@@ -1,0 +1,254 @@
+@font-face {
+    font-family: Phenomena; /* Гарнитура шрифта */
+    src: url(../fonts/Phenomena-regular.otf); /* Путь к файлу со шрифтом */
+   }
+
+body {
+    background: #fff;
+    font-size: 36px;
+    font-family: Phenomena;
+    max-height: 100%;
+    height: auto;
+    font-weight: bold;
+}
+
+*{
+    box-sizing: border-box;  
+}
+.wrapper {
+    max-width: 1200px;
+    min-width: 800px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 5px;
+    box-shadow: 0px 9px 20px 3px rgba(0,0,0,0.38);
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/*
+===================HEADER=====================
+*/
+.header {
+    min-height: 230px;  
+}
+.header-user-field {
+    position: relative;
+    background-color: #fff;
+    padding: 50px 15px 15px 15px;
+    color: #658138;
+    font-size: 30px;
+}
+.header-firstline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    min-height: 25px;
+    margin-bottom: 30px;
+}  
+
+.header-secondline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    min-height: 40px;
+}  
+.header-line {
+    vertical-align: middle;
+}
+.header-firstline .ru-language, .header-firstline .cz-language {
+    color: #fe9900;
+}
+.header-firstline .active-language {
+    color: #658138; 
+}
+
+.header-firstline a{
+    display: inline-block;
+    text-decoration: none;
+    color: #658138; 
+}
+.header-secondline .cart{
+    color: #658138; 
+    text-decoration: none;
+}
+.header-secondline .empty{
+    color: gray;
+}
+
+.header-secondline .serch-item {
+    display: inline-block;
+    line-height: 25px;
+    vertical-align: top;
+}
+
+.main-logo {
+    position: absolute;
+    left: calc(50% - 92.5px);
+    top: 10px;
+}
+.header-user-field img {
+    margin-right: 5px;
+}
+
+/*
+===================MAIN MENU=====================
+*/
+
+.main-menu {
+    min-height: 50px;
+    background-color: #658138;
+    width: 100%;
+    display: flex; 
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.main-menu img {
+    width: 40px;
+    height: 40px;
+ }
+
+ .main-menu-item{
+     display: inline-block;
+     position: relative;
+     font-size: 36px;
+ }
+ 
+ .main-menu-item:hover {
+      text-shadow:
+        -2px -2px 0 #360,
+        2px -2px 0 #360,
+        -2px 2px 0 #360,
+        2px 2px 0 #360;
+ }
+  .main-menu-item a{
+     color: #fff;
+     text-decoration: none;
+ }
+ .main-menu-cart-left {
+    position: absolute;
+    left: 20px;
+    top: 5px;
+ }
+ .main-menu-cart-right {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+ }
+
+.menu .line {
+    margin-right: 30px;
+}
+.line::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 2px;
+    height: 30px;
+    background-color: #fff;
+    z-index: 150;
+    right: -20px;
+    bottom: 0px;
+    }
+
+
+
+/*
+    ================footer====================
+ */
+
+ .footer {
+     width: 100%;
+     height: 100%;
+     padding: 0 15px 0 15px;
+     background: url(../images/footer_background.jpg) no-repeat center;
+     font-size: 30px;
+ }
+.main-footer-info {
+    
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 10px;
+    color: #fff;
+
+}
+
+.footer-schedule {
+    width: 26.6%;
+    height: auto;
+    position: relative;
+}
+.footer-schedule img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-contacts {
+    width: 28.2%;
+    margin-top: 7%;
+    margin-bottom: 20px;
+    position: relative;
+    min-width: 235px;
+}
+
+.footer-contacts img {
+    display: inline-block;
+    position: absolute;
+    top: -3S%;
+    left:0;
+}
+#footer-email-ico {
+    top: 60%;
+    left:0;
+}
+#footer-email, #footer-call-me {
+    margin-left: 55px;
+}
+#footer-phone-numbers {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.footer-menu {
+    width: 18.3%;
+    text-align: center;
+    margin-top: 7.15%;
+}
+.footer-menu a { 
+    text-decoration: none;
+    color: #fff;
+}
+.footer-menu a:hover {
+    text-shadow:
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+}
+
+.footer-logo {
+    width: 14.6%;
+    height: auto;
+    margin-top: 8%;
+}
+#footer-logo-ico {
+    width: 100%;
+    height: auto;
+}
+.foter-rights {
+    width: 40%;
+    font-size: 22px;
+    margin-top: 35px;
+    color: #fff;
+    opacity: 0.6;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+}

@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Phenomena; /* Гарнитура шрифта */
-    src: url(../fonts/Phenomena-regular.otf); /* Путь к файлу со шрифтом */
+    font-family: Phenomena;
+    src: url(../fonts/Phenomena-regular.otf); 
    }
 
 body {

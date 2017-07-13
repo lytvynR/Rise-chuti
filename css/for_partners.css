@@ -1,0 +1,170 @@
+.content {
+    width: 100%;
+    height: auto ;
+    min-height: 750px;
+    background-color: #fff;
+    padding: 20px 0 10px 0;
+    color: #658139;
+    font-weight: bold;
+}
+
+.content p {
+    color: #f8991d;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.partners-content-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 15px;
+}
+.partners-content-text div {
+    color: #818080;
+    font-size: 24px;
+    flex-basis: 410px;
+    margin-bottom: 30px;
+}
+#content-text-margin {
+    margin-right: 30px;
+}
+
+/*
+==========================benefits field=========================
+*/
+.benefits-wrapper {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    border: 2px solid #658138;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.benefits-item-circle {
+    width: 178px;
+    height: 178px;
+    color: #fe9900;
+    text-align: center;
+    font-size: 30px;
+    min-height: 100px;
+    padding: 5px 10px;
+    border-radius: 150px;
+    margin-right: 10px;
+}
+.last-cercle {
+    margin-right: 0;
+}
+.benefits-item {
+    width: auto;
+    height: auto;
+}
+
+.benefits-item-circle p {
+    margin-bottom: 10px;
+}
+.benefits-item .small-font {
+    font-size: 26px;
+}
+
+.circle {
+    padding:  20px 0  5px 0;
+    border: 2px solid #fe9900;
+    border-radius: 150px;
+}
+.three-items, .two-items {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+}
+
+/*
+==========================Partners form=========================
+*/
+
+.partners-form-wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.partners-form-wrapper img {
+    width: 100%;
+    height: auto;
+    min-height: 510px;
+}
+.partners-form {
+    min-width: 610px;
+    position: absolute;
+    top: 30px;
+    left: calc(50% - 305px);
+    text-align: right;
+}
+.form-header {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.partners-form input {
+    margin-bottom: 15px;
+    border: 2px solid #fecc7f;
+    width: 335px;
+    height: 40px;
+    font-size: 26px;
+    padding: 5px 10px;
+    cursor: text;
+    font-family: Phenomena;
+}
+.partners-form input:hover {
+    border: 2px solid #fe9900;
+}
+.partners-form input:focus {
+    border: 2px solid #fe9900;
+    outline: none;
+}
+.partners-form label {
+    color: #818080;
+    font-size: 30px;
+}
+
+#partners-form-button {
+    width: 230px;
+    height: 40px;
+    background-color: #fe9900;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    margin-right: 50px;
+    font-family: Phenomena;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+#partners-form-button:hover {
+    opacity: 0.7;
+}
+#partners-comment {
+    height: 100px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1352px) {
+.three-items {
+    position: relative;
+    right: -5px;
+}
+}
+
+@media screen and (max-width: 1274px) {
+#content-text-margin {
+    margin-right: 0px;
+}
+}

@@ -10,7 +10,7 @@
     width: 100%;
     max-width: 1200px;
     position: relative;
-
+    display: block;
  }
  .banner-field {
     width: 100%;

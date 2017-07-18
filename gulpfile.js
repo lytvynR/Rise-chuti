@@ -8,6 +8,7 @@ const rigger = require('gulp-rigger');
 const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
+const gulpCopy = require('gulp-copy');
 
 
 gulp.task('html', () =>
@@ -66,13 +67,25 @@ gulp.task('image', () =>
       use: [pngquant()],
       interlaced: true
     }))
-    .pipe(gulp.dest('Project/images/'))
+    .pipe(gulp.dest('./Project/images/'))
 );
 
 gulp.task('image-watch', ['image'], (done) => {
   browserSync.reload();
   done();
 });
+
+
+gulp.task('font', () => {
+     gulp
+      .src('fonts/*.*')
+      .pipe(gulp.dest('Project/fonts/'));
+});
+gulp.task('font-watch', ['font'], (done) => {
+  browserSync.reload();
+  done();
+});
+
 
 
 
@@ -87,10 +100,11 @@ gulp.task('serve', () => {
   gulp.watch('./*.html', ['html-watch']);
   gulp.watch('./js/*.*', ['js-watch']);
   gulp.watch('./css/*.css', ['style-watch']);
-  gulp.watch('./css/*.sass', ['sass-watch']);
+  gulp.watch('./css/*.scss', ['sass-watch']);
   gulp.watch('./images/**/*.*', ['image-watch']);
+  gulp.watch('./fonts/*.*', ['font-watch']);
 });
 
 
 
-gulp.task('build', sequence('clean', ['html','js','style','sass','image','serve']));
+gulp.task('build', sequence('clean', ['html','js','style','sass','image','font','serve']));

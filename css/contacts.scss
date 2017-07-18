@@ -1,0 +1,85 @@
+$secondColor:   #fe9900 ;
+$mainFont: Phenomena;
+
+.contacts-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    .contact-info{
+        width: 32%;
+        min-width: 290px;
+        min-height: 200px;
+        height: auto;
+        color: #658138;
+        font-size: 18px;
+        p{
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+    }
+    .calback-form {
+        width: 64%;
+        height: auto;
+
+    }
+}
+.contacts-header {
+    color: $secondColor;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 30px;
+}
+.contacts-form{
+    div{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+#contacts-form-comment{
+    display: block;
+    width: 100%;
+    height: 155px;
+    margin-right: 0;
+}
+#contacts-form-phone{
+    margin-right: 0;
+}
+.contacts-form-field {
+    width: 225px;
+    height: 35px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.button{
+    width: 110px;
+    height: 50px;
+    background-color: $secondColor;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-family: $mainFont;
+    font-size: 24px;
+}
+.button:hover{
+    background-color: lighten($secondColor, 20%)
+}
+
+@media screen and (max-width: 1650px) {
+.contacts-form-field{
+    display: block;
+}
+.contacts-form{
+    div{
+        display: block;
+    }
+}
+.contacts-form-field{
+    width: 300px;
+}
+}

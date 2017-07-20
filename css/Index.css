@@ -165,18 +165,11 @@
     height: auto;
 }
 #submit-subscribe {
-    color: #fff;
-    background-color: #fe9900;
     width: 48%;
-    font-size: 30px;
-    border: none;
-    opacity: 1;
+    height: 40px;
     margin-left: 26%;
-    font-family: Phenomena;
 }
-#submit-subscribe:hover {
-    opacity: 0.8;
-}
+
 
 #subscribe-number-field, #subscribe-email-field {
     width: 80.5%;

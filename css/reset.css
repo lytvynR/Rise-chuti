@@ -11,7 +11,7 @@ del{text-decoration:line-through;}
 table{border-collapse:collapse;border-spacing:0;font-size:100%;width:100%;border:none;}
 font{color:inherit!important;font:inherit!important;}
 a{color:#000;text-decoration:underline;}
-input[type="text"],input[type="password"]{font-size:100%;padding:0;}
+input{font-size:100%;padding:0;}
 
 /* main typography */
 strong,th,theadtd,h1,h2,h3,h4,h5,h6{font-weight:bold;}
@@ -19,7 +19,7 @@ cite,em,dfn{font-style:italic;}
 code,kbd,samp,pre,tt,var{font-size:92%;font-family:Courier,Monaco,"Lucida Console";}
 var{font-size:92%;font-family:Monaco,"Lucida Console",Mono-space;}
 textarea,select,option{font-family:Tahoma,Courier,Monaco,"Lucida Console",Mono-space;font-size:100%;}
-input[type="text"],input[type="password"]{font-family:Tahoma,Сourier,Monaco,"Lucida Console",Mono-space;font-size:100%;}
+input{font-family:Tahoma,Сourier,Monaco,"Lucida Console",Mono-space;font-size:100%;}
 del{text-decoration:line-through;color:#666;}
 ins,dfn{border-bottom:1px solid #ccc;}
 small,sup,sub{font-size:85%;}
@@ -40,10 +40,10 @@ a:hover{text-decoration:none;cursor:pointer;}
 /*forms*/
 fieldset{border:1px solid #ccc;}
 legend{background:#fff;}
-textarea,input[type="text"],input[type="password"],select{border:1px solid #999;background:#fff;}
-textarea:hover,input[type="text"]:hover,input[type="password"]:hover,select:hover{border-color:#aaa;}
-textarea:focus,input[type="text"]:focus,input[type="password"]:focus,select:focus{border-color:#888;outline:1px solid #ffa;}
+textarea,input,select{border:1px solid #999;background:#fff;}
+textarea:hover,input:hover,select:hover{border-color:#aaa;}
+textarea:focus,input:focus,select:focus{border-color:#888;outline:1px solid #ffa;}
 input,select{cursor:pointer;}
-input[type="text"],input[type="password"]{cursor:text;}
+input{cursor:text;}
 input{vertical-align:middle;}
 input.error,textarea.error,textarea.error,legend.error,select.error{border:1px solid #c33!important;}

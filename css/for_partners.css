@@ -110,20 +110,8 @@
 }
 .partners-form input {
     margin-bottom: 15px;
-    border: 2px solid #fecc7f;
     width: 335px;
     height: 40px;
-    font-size: 26px;
-    padding: 5px 10px;
-    cursor: text;
-    font-family: Phenomena;
-}
-.partners-form input:hover {
-    border: 2px solid #fe9900;
-}
-.partners-form input:focus {
-    border: 2px solid #fe9900;
-    outline: none;
 }
 .partners-form label {
     color: #818080;
@@ -133,22 +121,12 @@
 #partners-form-button {
     width: 230px;
     height: 40px;
-    background-color: #fe9900;
-    border: none;
-    color: #fff;
-    font-size: 24px;
     margin-right: 50px;
-    font-family: Phenomena;
-    opacity: 1;
-    transition: opacity 0.3s ease;
-    cursor: pointer;
-}
-
-#partners-form-button:hover {
-    opacity: 0.7;
+    margin-top: 10px;
 }
 #partners-comment {
     height: 100px;
+    width: 335px;
 }
 
 

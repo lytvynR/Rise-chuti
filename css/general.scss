@@ -206,7 +206,7 @@ body {
 .footer-contacts img {
     display: inline-block;
     position: absolute;
-    top: -35%;
+    top: -5%;
     left:0;
 }
 #footer-email-ico {
@@ -215,7 +215,34 @@ body {
 }
 #footer-email, #footer-call-me {
     margin-left: 55px;
+    position: relative;
 }
+#footer-call-me::before{
+    position: absolute;
+    content: "";
+    display: block;
+    background-image: url("../images/footer_call_ico.png");
+    z-index: 150;
+    left: -55px;
+    bottom: -5px;
+    width: 45px;
+    height: 45px;
+}
+
+
+
+#footer-email::before {
+    position: absolute;
+    content: "";
+    display: block;
+    background-image: url("../images/footer_email_ico.png");
+    z-index: 150;
+    left: -55px;
+    bottom: -5px;
+    width: 45px;
+    height: 45px;
+}
+
 #footer-phone-numbers {
     margin-left: 40px;
     margin-top: 20px;
@@ -289,7 +316,7 @@ body {
     outline: none;
     transition: background-color 0.3s ease;
     cursor: pointer;
-    box-shadow: 0px 9px 20px 3px rgba(0,0,0,0.38);
+   box-shadow: 0px 6px 30px 0px rgba(0,0,0,0.36);
  }
   .buttons:hover {
     background-color: lighten($secondColor, 20%);

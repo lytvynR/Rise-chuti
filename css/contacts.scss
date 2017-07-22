@@ -1,6 +1,8 @@
 $secondColor:   #fe9900 ;
 $mainFont: Phenomena;
-
+.content {
+     min-height: 1100px;
+}
 .contacts-wrapper {
     width: 100%;
     height: auto;
@@ -8,6 +10,7 @@ $mainFont: Phenomena;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    margin-bottom: 50px;
 
     .contact-info{
         width: 32%;
@@ -60,6 +63,12 @@ $mainFont: Phenomena;
     width: 110px;
     height: 50px;  
 }
+.contacts-map {
+    width: 100%;
+    padding: 0 20px;
+}
+
+
 
 
 @media screen and (max-width: 1650px) {

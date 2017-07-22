@@ -12,7 +12,7 @@ const gulpCopy = require('gulp-copy');
 
 
 gulp.task('html', () =>
-   gulp.src('*.html')
+   gulp.src('./*.html')
     .pipe(rigger())
     .pipe(gulp.dest('Project/'))
 );

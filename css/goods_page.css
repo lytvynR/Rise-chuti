@@ -40,6 +40,11 @@
     display: block;
     background-color: #fff;
     font-size: 30px;
+    padding: 0 10px;
+}
+.navigation-menu-item img {
+    margin-right: 10px;
+    vertical-align: middle;
 }
 .navigation-menu {
     width: 100%;
@@ -103,12 +108,14 @@ padding: 0 0 0 10px;
     font-size: 18px;
     color: #658138;
     border: 1px solid #f8981d;
-    font-family: Phenomena;
-    
+    font-family: Phenomena;   
+    font-weight: normal;
 }
-#chenge-sortin-field:active {
-       border: 1px solid #f8981d;
- }
+#chenge-sortin-field option{
+    font-weight: normal;
+    font-size: 18px;
+    font-family: Phenomena;
+}
 
 .goods-item {
     width: 240px;
@@ -137,6 +144,7 @@ padding: 0 0 0 10px;
     align-items: center;
     justify-content: space-around;
     opacity: 1;
+    transition: opacity 0.7s ease;
 }
 .goods-item-name:hover {
     cursor: pointer;
@@ -181,8 +189,26 @@ padding: 0 0 0 10px;
 }
 
 .goods-image-view {
-    margin-right: 20px;
+    margin-right: 25px;
+    transform: scale(1);
+    transition: transform 0.7s ease;
 }
+.goods-image-view:hover {
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+}
+.goods-image-cart{
+    transform: scale(1);
+    transition: transform 0.7s ease;
+}
+
+.goods-image-cart:hover {
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
 .goods-item-overlay::after {
     position: absolute;
     content: "";

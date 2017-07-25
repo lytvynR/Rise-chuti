@@ -36,13 +36,7 @@ $mainFont: Phenomena;
     text-align: left;
     font-size: 30px;
 }
-.contacts-form{
-    div{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-}
+
 #contacts-form-comment{
     display: block;
     width: 100%;
@@ -53,10 +47,13 @@ $mainFont: Phenomena;
     margin-right: 0;
 }
 .contacts-form-field {
-    width: 225px;
+    width: 300px;
     height: 35px;
     margin-bottom: 20px;
-    margin-right: 10px;
+    font-weight: normal;
+    font-size: 18px;
+    display: block;
+ 
 }
 
 .contacts-form-button{
@@ -71,16 +68,3 @@ $mainFont: Phenomena;
 
 
 
-@media screen and (max-width: 1650px) {
-.contacts-form-field{
-    display: block;
-}
-.contacts-form{
-    div{
-        display: block;
-    }
-}
-.contacts-form-field{
-    width: 300px;
-}
-}

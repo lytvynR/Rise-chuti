@@ -89,12 +89,12 @@ gulp.task('font-watch', ['font'], (done) => {
 
 
 
-gulp.task('clean', () => del('./Project/'));
+gulp.task('clean', () => del('Project/'));
 
 gulp.task('serve', () => {
   browserSync.init({
     server: {
-      baseDir: './Project/'
+      baseDir: 'Project/'
     }
   });
   gulp.watch('./*.html', ['html-watch']);

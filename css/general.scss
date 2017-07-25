@@ -322,3 +322,45 @@ body {
     background-color: lighten($secondColor, 20%);
     cursor: pointer;
  }
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1601px) and (max-width: 1676px) {
+.output-goods-field {
+   width: 520px; 
+}
+}
+@media screen and (max-width: 1470px) {
+.output-goods-field {
+   width: 520px; 
+}
+}
+ @media screen and (max-width: 1600px) {
+.wrapper {
+   width: 80%
+}
+}
+ @media screen and (max-width: 1280px) {
+.wrapper {
+   width: 90%
+}
+}
+@media screen and (max-width: 1352px) {
+.three-items {
+    position: relative;
+    right: -5px;
+}
+}
+@media screen and (max-width: 995px) {
+.partners-content-text .content-text{
+    margin: 0 15px 30px 15px;
+    width: 600px;
+}
+}

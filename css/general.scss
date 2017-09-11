@@ -3,6 +3,12 @@
     src: url(../fonts/Phenomena-regular.otf); 
    }
 
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+
 $secondColor:   #fe9900 ;
 $mainFont: Phenomena;
 
@@ -197,7 +203,7 @@ body {
 
 .footer-contacts {
     width: 28.2%;
-    margin-top: 7%;
+    margin-top: 70px;
     margin-bottom: 20px;
     position: relative;
     min-width: 235px;
@@ -251,7 +257,7 @@ body {
 .footer-menu {
     width: 18.3%;
     text-align: center;
-    margin-top: 7.15%;
+    margin-top: 70px;
 }
 .footer-menu a { 
     text-decoration: none;
@@ -268,7 +274,7 @@ body {
 .footer-logo {
     width: 14.6%;
     height: auto;
-    margin-top: 8%;
+    margin-top: 75px;
 }
 #footer-logo-ico {
     width: 100%;

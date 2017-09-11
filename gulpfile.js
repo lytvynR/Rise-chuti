@@ -26,7 +26,6 @@ gulp.task('html-watch', ['html'], (done) => {
 gulp.task('js', () =>
   gulp.src('./js/*.js')
     .pipe(rigger())
-    .pipe(uglify())
     .pipe(gulp.dest('Project/js/'))
 );
 

@@ -14,7 +14,10 @@
  }
  .banner-field {
     width: 100%;
-  height: auto;
+    min-height: 400px;
+    background-image: url(../images/main_banner_1.jpg);
+    transition: background-image 1s ease;
+
  }
 .main-banner-slider {
     width: 10%;
@@ -60,6 +63,7 @@
      text-align: center;
      min-height: 50px;
      font-weight: bold;
+     position: relative;
  }
  .new-goods-slider {
      width: 100%;
@@ -71,9 +75,26 @@
      position: relative;
      padding: 0 10px;
      margin-bottom: 10px;
-
-
  }
+
+.slider_arrow_left{
+    left: -80%;
+}
+.slider_arrow_right{
+    right: -80%;
+}
+
+.slider_arrows{
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    z-index: 999;
+  
+
+}
+.slider_arrows:hover{
+    transform: scale(1.3);
+}
  .new-goods-slider-item {
      width: 21.7%;
      height: auto;
@@ -110,25 +131,6 @@
  .new-font-size {
      font-size: 26px;
  }
- .slider_arrow_left {
-     left: 5px;
-     top: 35%;
- }
- .slider_arrow_right {
-     right: 5px;
-     top: 35%;
-}
-
-.slider_arrows {
-     z-index: 999;
-     position: absolute;
-}
-
-.slider_arrows:hover {
-    -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-}
 
 .subscribe-field {
     width: 100%;
@@ -180,7 +182,11 @@
     margin-bottom: 10px;
     margin-left: 9.75%;
     padding: 3px 10px;
+    font-weight: normal;
+    font-family: Phenomena;
 }
+input::-moz-placeholder { color: #fff; }
+input::-webkit-input-placeholder { color: #fff; }
 
 #subscribe-number-field:hover, #subscribe-email-field:hover {
 cursor: text;
@@ -250,6 +256,10 @@ outline: none;
     box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.27);
     margin-bottom: 10px;
     cursor: pointer;
+    transition: transform 1s ease;
+}
+.manufacturers-slider-item:hover{
+    transform: scale(1.2);
 }
 .manufacturers-slider-ico {
     width: 100%;
@@ -268,107 +278,3 @@ right: 5px;
     top: 35%;
 }
 
-/*
-    ================footer====================
- */
-
- .footer {
-     width: 100%;
-     height: 100%;
-     padding: 0 15px 0 15px;
-     background: url(../images/footer_background.jpg) no-repeat center;
-     font-size: 30px;
- }
-.main-footer-info {
-    
-    width: 100%;
-    min-height: 150px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    padding-top: 10px;
-    color: #fff;
-
-}
-
-.footer-schedule {
-    width: 26.6%;
-    height: auto;
-    position: relative;
-}
-.footer-schedule img {
-    width: 100%;
-    height: auto;
-}
-
-.footer-contacts {
-    width: 28.2%;
-    margin-top: 7%;
-    margin-bottom: 20px;
-    position: relative;
-    min-width: 235px;
-}
-
-.footer-contacts img {
-    display: inline-block;
-    position: absolute;
-    top: -3S%;
-    left:0;
-}
-#footer-email-ico {
-    top: 60%;
-    left:0;
-}
-#footer-email, #footer-call-me {
-    margin-left: 55px;
-}
-#footer-phone-numbers {
-    margin-left: 40px;
-    margin-top: 20px;
-}
-
-.footer-menu {
-    width: 18.3%;
-    text-align: center;
-    margin-top: 7.15%;
-}
-.footer-menu a { 
-    text-decoration: none;
-    color: #fff;
-}
-.footer-menu a:hover {
-    text-shadow:
-        -2px -2px 0 #000,
-        2px -2px 0 #000,
-        -2px 2px 0 #000,
-        2px 2px 0 #000;
-}
-
-.footer-logo {
-    width: 14.6%;
-    height: auto;
-    margin-top: 8%;
-}
-#footer-logo-ico {
-    width: 100%;
-    height: auto;
-}
-.foter-rights {
-    width: 40%;
-    font-size: 22px;
-    margin-top: 35px;
-    color: #fff;
-    opacity: 0.6;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-
-
-/*
-    =====================goods page=========================
-    ========================================================
- */
-
- 

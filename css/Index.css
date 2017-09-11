@@ -12,13 +12,12 @@
     position: relative;
     display: block;
  }
- .banner-field {
+.banner-field {
     width: 100%;
-    min-height: 400px;
-    background-image: url(../images/main_banner_1.jpg);
-    transition: background-image 1s ease;
-
- }
+}
+.hidden-banner{
+    display: none;
+}
 .main-banner-slider {
     width: 10%;
     height: 25px;

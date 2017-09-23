@@ -235,6 +235,7 @@ outline: none;
      width: 100%;
      height: auto;
      margin-bottom: 10px;
+     position: relative;
 
  }
  .manufacturers-slider-wrapper {
@@ -267,13 +268,11 @@ outline: none;
 
 .manufacturers-slider-right-arrow {
 position: absolute;
-top: 35%;
 right: 5px;
 
 }
 .manufacturers-slider-left-arrow {
     position: absolute;
     left: 5px;
-    top: 35%;
 }
 

@@ -14,7 +14,7 @@ const gulpCopy = require('gulp-copy');
 gulp.task('html', () =>
    gulp.src('./*.html')
     .pipe(rigger())
-    .pipe(gulp.dest('Project/'))
+    .pipe(gulp.dest('../Project/'))
 );
 
 gulp.task('html-watch', ['html'], (done) => {
@@ -26,7 +26,7 @@ gulp.task('html-watch', ['html'], (done) => {
 gulp.task('js', () =>
   gulp.src('./js/*.js')
     .pipe(rigger())
-    .pipe(gulp.dest('Project/js/'))
+    .pipe(gulp.dest('../Project/js/'))
 );
 
 gulp.task('js-watch', ['js'], (done) => {
@@ -37,7 +37,7 @@ gulp.task('js-watch', ['js'], (done) => {
 gulp.task('style', () =>
   gulp.src('css/*.css')
     .pipe(cssmin())
-    .pipe(gulp.dest('Project/css/'))
+    .pipe(gulp.dest('../Project/css/'))
 );
 
 gulp.task('style-watch', ['style'], (done) => {
@@ -48,7 +48,7 @@ gulp.task('style-watch', ['style'], (done) => {
 gulp.task('sass', () => 
     gulp.src("./css/*.scss")
         .pipe(sass().on("error", sass.logError))
-        .pipe(gulp.dest("Project/css/"))
+        .pipe(gulp.dest("../Project/css/"))
 );
 
 gulp.task("sass-watch", ['sass'], (done) => {
@@ -66,7 +66,7 @@ gulp.task('image', () =>
       use: [pngquant()],
       interlaced: true
     }))
-    .pipe(gulp.dest('./Project/images/'))
+    .pipe(gulp.dest('../Project/images/'))
 );
 
 gulp.task('image-watch', ['image'], (done) => {
@@ -78,7 +78,7 @@ gulp.task('image-watch', ['image'], (done) => {
 gulp.task('font', () => {
      gulp
       .src('fonts/*.*')
-      .pipe(gulp.dest('Project/fonts/'));
+      .pipe(gulp.dest('../Project/fonts/'));
 });
 gulp.task('font-watch', ['font'], (done) => {
   browserSync.reload();
@@ -88,12 +88,12 @@ gulp.task('font-watch', ['font'], (done) => {
 
 
 
-gulp.task('clean', () => del('Project/'));
+gulp.task('clean', () => del('../Project'));
 
 gulp.task('serve', () => {
   browserSync.init({
     server: {
-      baseDir: 'Project/'
+      baseDir: '../Project'
     }
   });
   gulp.watch('./*.html', ['html-watch']);

@@ -23,22 +23,22 @@
        <div class="header-user-field">
            <img src="./images/main_logo.png" name="header-logo-ico" class="main-logo">
               <div class="header-firstline">
-               <div>
-                 <a href="#" class="ru-language active-language">ru</a>
+               <div class="lang-container">
+                 <a href="#Russian" class="language active-language">ru</a>
                  <span class="header-line">|</span>
-                 <a href="#51515" class="cz-language">cz</a>
+                 <a href="#Czech" class="language">cz</a>
                </div>
                   
                 <div class="header-enter">
                      <a href="#">
                     <img src="./images/enter_ico.png" name="header-enter-ico">
-                    <span>ВХОД</span>
+                    <span id="enter-to-account">ВХОД</span>
                     </a>
                 </div>
                 </div>
 
                 <div class="header-secondline">
-                    <div>
+                    <div class="search-field">
                         <img src="./images/header_srch_ico.png" name="header-srch-ico">
                         <span class="serch-item">ПОИСК ПО САЙТУ</span>
                     </div>
@@ -124,9 +124,10 @@
         </div>
         <div class="manufacturers-slider">
             <div class="shares-header">- ПРОИЗВОДИТЕЛИ -</div>
-            <div class="manufacturers-slider-wrapper">
-                <img src="./images/companies_left_arrow.png" class="manufacturers-slider-left-arrow slider_arrows">
+            <img src="./images/companies_left_arrow.png" class="manufacturers-slider-left-arrow slider_arrows">
                 <img src="./images/companies_right_arrow.png" class="manufacturers-slider-right-arrow slider_arrows">
+            <div class="manufacturers-slider-wrapper">
+                
                 <div class="manufacturers-slider-item"><img src="./images/companies-logo/company_logo_1.jpg" alt="" class="manufacturers-slider-ico"></div>
                 <div class="manufacturers-slider-item"><img src="./images/companies-logo/company_logo_2.jpg" alt="" class="manufacturers-slider-ico"></div>
                 <div class="manufacturers-slider-item"><img src="./images/companies-logo/company_logo_3.jpg" alt="" class="manufacturers-slider-ico"></div>
@@ -164,7 +165,24 @@
         <div class="foter-rights">©2017 Říše Chuti. Все права защищены.</div>
     </div>
     
+    <div class="modal-window">
+        <div class="login-window">
+            <img src="./images/main_logo.png" alt="" id="modal-ico">
+            <form action="">
+            <label for="login">Логин:</label>
+            <input type="text" name="login" class="input-field">
 
+            <label for="password">Пароль:</label>
+            <input type="password" class="input-field">
+
+            <label for="checkbox">Запомнить меня?</label>
+            <input type="checkbox" name="remember me" id="remember-me">
+            <input type="button" value="Login">
+            <label for="" class="forgot-password">Восстановить пароль, или пройти регистрацию</label>
+            
+            </form>    
+        </div>
+    </div>
 
     </div>
 </body>

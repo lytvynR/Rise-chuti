@@ -11,6 +11,7 @@
 
 $secondColor:   #fe9900 ;
 $mainFont: Phenomena;
+$mainGreen: #658138;
 
 
 body {
@@ -47,7 +48,7 @@ body {
     position: relative;
     background-color: #fff;
     padding: 50px 15px 15px 15px;
-    color: #658138;
+    color: $mainGreen;
     font-size: 30px;
 }
 .header-firstline {
@@ -68,21 +69,26 @@ body {
 }  
 .header-line {
     vertical-align: middle;
+    color: $mainGreen;
 }
-.header-firstline .ru-language, .header-firstline .cz-language {
+.header-firstline .language, .header-firstline {
     color:  $secondColor;
+    text-decoration: none;
 }
 .header-firstline .active-language {
-    color: #658138; 
+    color: $mainGreen; 
+}
+.language:hover{
+    text-decoration: underline;
 }
 
 .header-firstline a{
     display: inline-block;
     text-decoration: none;
-    color: #658138; 
+    color: $mainGreen; 
 }
 .header-secondline .cart{
-    color: #658138; 
+    color: $mainGreen; 
     text-decoration: none;
 }
 .header-secondline .empty{
@@ -103,6 +109,42 @@ body {
 .header-user-field img {
     margin-right: 5px;
 }
+.search-form{
+    display: inline-block;
+}
+
+.modal-window{
+    position: fixed;
+    font-family: $mainFont;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    pointer-events: none;
+}
+.login-window{
+    width: 600px;
+    height: 300px;
+    background-color: #fff;
+    z-index: 99999;
+    position: fixed;
+    font-family: $mainFont;
+    top: calc(50% - 150px);
+    left: calc(50% - 300px);
+    border-radius: 35px 35px 35px 35px;
+    -moz-border-radius: 35px 35px 35px 35px;
+    -webkit-border-radius: 35px 35px 35px 35px;
+    border: 8px solid lighten($secondColor, 15%);
+    padding: 15px 15px;   
+}
+
+#modal-ico{
+    position: absolute;
+    top: -105px;
+    left: 208px;
+}
 
 /*
 ===================MAIN MENU=====================
@@ -110,7 +152,7 @@ body {
 
 .main-menu {
     min-height: 50px;
-    background-color: #658138;
+    background-color: $mainGreen;
     width: 100%;
     display: flex; 
     position: relative;
@@ -329,6 +371,17 @@ body {
     cursor: pointer;
  }
 
+ #search-input{
+    width: 300px;
+    height: 40px;
+    position: relative;
+    top: -5px;
+    font-family: Phenomena;
+    font-size: 24px;
+}
+#search-input:focus{
+    outline: none;
+}
 
 
 
@@ -368,5 +421,8 @@ body {
 .partners-content-text .content-text{
     margin: 0 15px 30px 15px;
     width: 600px;
+}
+#search-input{
+    width: 255px;
 }
 }

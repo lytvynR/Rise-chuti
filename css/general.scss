@@ -50,6 +50,7 @@ body {
     padding: 50px 15px 15px 15px;
     color: $mainGreen;
     font-size: 30px;
+    min-height: 175px;
 }
 .header-firstline {
     display: flex;
@@ -81,19 +82,27 @@ body {
 .language:hover{
     text-decoration: underline;
 }
+#enter-to-account{
+    color: $mainGreen;
+    cursor: pointer;
+}
 
 .header-firstline a{
     display: inline-block;
     text-decoration: none;
     color: $mainGreen; 
 }
-.header-secondline .cart{
+
+.cart{
     color: $mainGreen; 
     text-decoration: none;
+    cursor: pointer;
 }
-.header-secondline .empty{
-    color: gray;
-}
+
+.empty{
+        color: gray;
+    }
+
 
 .header-secondline .serch-item {
     display: inline-block;
@@ -121,14 +130,15 @@ body {
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.8);
-    z-index: 9999;
-    pointer-events: none;
+    z-index: 999;
+    display: none; 
+    
 }
 .login-window{
     width: 600px;
     height: 300px;
     background-color: #fff;
-    z-index: 99999;
+    z-index: 9999;
     position: fixed;
     font-family: $mainFont;
     top: calc(50% - 150px);
@@ -137,13 +147,65 @@ body {
     -moz-border-radius: 35px 35px 35px 35px;
     -webkit-border-radius: 35px 35px 35px 35px;
     border: 8px solid lighten($secondColor, 15%);
-    padding: 15px 15px;   
+    padding: 15px 15px;  
+    display: none; 
 }
 
 #modal-ico{
     position: absolute;
     top: -105px;
     left: 208px;
+}
+.forgot-password{
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.login-button{
+    width: 150px;
+    height: 40px;
+}
+.login-form{
+    margin: 5px 20px 20px 50px;
+}
+.login-field-wrapper{
+    display: inline-block;
+    width: 320px;
+    height: auto;
+}
+#remember-me{
+    cursor: pointer;
+}
+.login-field{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.login-margin{
+    margin-bottom: 20px;
+}
+
+.login-info{
+    position: relative;
+    top: 37px;
+}
+.password-info{
+    position: relative;
+    top: -65px;
+    left: -15px;
+}
+.forgot-password a {
+    color: blue;
+}
+#close-ico{
+    position: absolute;
+    top: -125px;
+    right: -125px;
+    transform: scale(0.1);  
+    &:hover{
+        cursor: pointer;
+    } 
 }
 
 /*

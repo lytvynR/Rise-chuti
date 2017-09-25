@@ -2,15 +2,19 @@
 
 window.onload = function () {
     languageChanger();
-    enterToYourAccount()
+    enterToYourAccount();
+    searchFunction();
+
+
+    if(window.location.href == "http://localhost:3000/index.html"){
     mainSlider();
     newGodsSlider();
     setInterval(changeMainBanner, 10000); // исключить момент одновременного переключения 2 баннера
-    searchFunction();
     manufacturers();
+    }
 }
 
-//================================language change======================================
+//================================language changer======================================
 
 function languageChanger(){
     var contein = document.body.getElementsByClassName("lang-container")[0];
@@ -45,18 +49,7 @@ function languageChanger(){
         })
          }
      })
-     
-    
- 
-     //search_field.children[1].children[0]('click', function(event){
-     //    if(event.keycode == 13){
-     //        alert("enterbleat");
-     //    }
-     //})
- 
-     
- 
-     }
+    }
 
 /*
     ==================New-goods-slider===================
@@ -229,12 +222,49 @@ function manufacturers(){
 
 //================================enter=================================
 
-function enterToYourAccount(){
-    var enter_field = document.getElementById("enter-to-account");
-
+/*function enterToYourAccount(){
+    var enter_field = document.getElementsByClassName("header-enter")[0];
+    
     enter_field.addEventListener('click', function(){
-        
-
+        addLoginModalWindow();
+        var close = document.getElementById("close-ico"); 
+        closeModalWindow(close);
     })
 
+}
+
+function addLoginModalWindow(){
+    var wrapp = document.body.getElementsByClassName("wrapper")[0];
+    wrapp.innerHTML += "<div class='modal-window'><div class='login-window'><img src='./images/main_logo.png' alt='' id='modal-ico'><img src='./images/close.png' alt='' id='close-ico'><form action='' class='login-form'><label for='login' class='login-info'>Логин:</label><br><label for='password' class='password-info'>Пароль:</label><div class='login-field-wrapper'><input type='text' name='login' class='input-field login-field'><br><input type='password' class='input-field login-field login-margin'><br><div><label for='checkbox' style='font-size: 22px;'>Запомнить меня?</label><input type='checkbox' name='remember me' id='remember-me'><input type='button' value='Login' class='buttons login-button'></div></div><label for='' class='forgot-password'><a href='#'>Восстановить</a>&nbsp;пароль, или пройти&nbsp;<a href='#'>регистрацию</a></label></form></div></div>";
+}
+function closeModalWindow(close){
+    close.addEventListener('click', function(event){
+        document.getElementsByClassName("modal-window")[0].outerHTML = '';
+        
+    })
+}
+*/
+
+
+function enterToYourAccount(){
+    var enter_field = document.getElementsByClassName("header-enter")[0];
+    var modal_background = document.body.getElementsByClassName("modal-window")[0];
+    var login_dialog_window = document.body.getElementsByClassName("login-window")[0];
+    var close_modal_window = document.getElementById("close-ico");
+    var modal_window_background = document.getElementsByClassName("modal-window")[0];
+
+    enter_field.addEventListener('click', function(){
+        modal_background.style='display:block;';
+        login_dialog_window.style='display:block;';
+    })
+    close_modal_window.addEventListener('click', function(){
+        modal_background.style='display:none;';
+        login_dialog_window.style='display:none;';
+    })
+    modal_window_background.addEventListener('click', function(event){
+        if(event.target.className == "modal-window"){
+        modal_background.style='display:none;';
+        login_dialog_window.style='display:none;';
+        }
+    })
 }

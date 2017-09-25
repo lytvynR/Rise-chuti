@@ -20,46 +20,44 @@
 <body>
     <div class="wrapper">
     <div class="header">
-       <div class="header-user-field">
-           <img src="./images/main_logo.png" name="header-logo-ico" class="main-logo">
-              <div class="header-firstline">
-               <div>
-                 <a href="#" class="language active-language">ru</a>
-                 <span class="header-line">|</span>
-                 <a href="#51515" class="language">cz</a>
-               </div>
-                  
-                <div class="header-enter">
-                     <a href="#">
-                    <img src="./images/enter_ico.png" name="header-enter-ico">
-                    <span>ВХОД</span>
-                    </a>
+        <div class="header-user-field">
+            <img src="./images/main_logo.png" name="header-logo-ico" class="main-logo">
+                <div class="header-firstline">
+                <div class="lang-container">
+                    <a href="#Russian" class="language active-language">ru</a>
+                    <span class="header-line">|</span>
+                    <a href="#Czech" class="language">cz</a>
                 </div>
-                </div>
+                    
+                    <div class="header-enter">
+                        <img src="./images/enter_ico.png" name="header-enter-ico">
+                        <span id="enter-to-account">ВХОД</span>
+                    </div>
+                    </div>
 
-                <div class="header-secondline">
-                    <div>
-                        <img src="./images/header_srch_ico.png" name="header-srch-ico">
-                        <span class="serch-item">ПОИСК ПО САЙТУ</span>
+                    <div class="header-secondline">
+                        <div class="search-field">
+                            <img src="./images/header_srch_ico.png" name="header-srch-ico">
+                            <span class="serch-item">ПОИСК ПО САЙТУ</span>
+                        </div>
+                        <div>
+                            <a href="#" class="cart empty">
+                            <img src="./images/cart_ico.png" name="header-cart-ico">
+                            <span>ПУСТО</span>
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                        <a href="#" class="cart empty">
-                        <img src="./images/cart_ico.png" name="header-cart-ico">
-                        <span>ПУСТО</span>
-                        </a>
-                    </div>
-                </div>
-       </div>
-       <div class= "main-menu">
-            <img src="./images/left_cart_ico.png" class="main-menu-cart-left">
-            <ul class="menu">
-                <li class="main-menu-item line"><a href="./index.html">Главная</a></li>
-                <li class="main-menu-item line"><a href="./goods_page.html">Каталог</a></li>
-                <li class="main-menu-item line"><a href="./for_partners.html">Партнёрам</a></li>
-                <li class="main-menu-item"><a href="./contacts.html">Контакты</a></li>
-            </ul>
-            <img src="./images/right_cart_ico.png" class="main-menu-cart-right">
-       </div>
+        </div>
+        <div class= "main-menu">
+                <img src="./images/left_cart_ico.png" class="main-menu-cart-left">
+                <ul class="menu">
+                    <li class="main-menu-item line"><a href="./index.html">Главная</a></li>
+                    <li class="main-menu-item line"><a href="./goods_page.html">Каталог</a></li>
+                    <li class="main-menu-item line"><a href="./for_partners.html">Партнёрам</a></li>
+                    <li class="main-menu-item"><a href="./contacts.html">Контакты</a></li>
+                </ul>
+                <img src="./images/right_cart_ico.png" class="main-menu-cart-right">
+        </div>
     </div>
     <div class="content">
         <div class="sidebar">
@@ -236,6 +234,28 @@
         </div>
         <div class="foter-rights">©2017 Říše Chuti. Все права защищены.</div>
     </div>
+
+    <div class="modal-window">
+            <div class="login-window">
+                <img src="./images/main_logo.png" alt="" id="modal-ico">
+                <img src="./images/close.png" alt="" id="close-ico">
+                <form action="" class="login-form">
+                <label for="login" class="login-info">Логин:</label><br>
+                <label for="password" class="password-info">Пароль:</label>
+                <div class="login-field-wrapper">
+                    <input type="text" name="login" class="input-field login-field"><br>
+                    <input type="password" class="input-field login-field login-margin"><br>
+                    <div>
+                        <label for="checkbox" style="font-size: 22px;">Запомнить меня?</label>
+                        <input type="checkbox" name="remember me" id="remember-me">
+                        <input type="button" value="Login" class="buttons login-button">
+                    </div>
+                </div>
+                <label for="" class="forgot-password"><a href="#">Восстановить</a>&nbsp;пароль, или пройти&nbsp;<a href="#">регистрацию</a></label>
+                
+                </form>    
+            </div>
+        </div>
     
 
 

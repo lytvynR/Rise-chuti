@@ -30,10 +30,8 @@
                </div>
                   
                 <div class="header-enter">
-                     <a href="#">
                     <img src="./images/enter_ico.png" name="header-enter-ico">
                     <span id="enter-to-account">ВХОД</span>
-                    </a>
                 </div>
                 </div>
 
@@ -43,10 +41,8 @@
                         <span class="serch-item">ПОИСК ПО САЙТУ</span>
                     </div>
                     <div>
-                        <a href="#" class="cart empty">
                         <img src="./images/cart_ico.png" name="header-cart-ico">
-                        <span>ПУСТО</span>
-                        </a>
+                        <span class="cart empty">ПУСТО</span>
                     </div>
                 </div>
        </div>
@@ -164,25 +160,28 @@
         </div>
         <div class="foter-rights">©2017 Říše Chuti. Все права защищены.</div>
     </div>
-    
     <div class="modal-window">
-        <div class="login-window">
-            <img src="./images/main_logo.png" alt="" id="modal-ico">
-            <form action="">
-            <label for="login">Логин:</label>
-            <input type="text" name="login" class="input-field">
-
-            <label for="password">Пароль:</label>
-            <input type="password" class="input-field">
-
-            <label for="checkbox">Запомнить меня?</label>
-            <input type="checkbox" name="remember me" id="remember-me">
-            <input type="button" value="Login">
-            <label for="" class="forgot-password">Восстановить пароль, или пройти регистрацию</label>
-            
-            </form>    
+            <div class="login-window">
+                <img src="./images/main_logo.png" alt="" id="modal-ico">
+                <img src="./images/close.png" alt="" id="close-ico">
+                <form action="" class="login-form">
+                <label for="login" class="login-info">Логин:</label><br>
+                <label for="password" class="password-info">Пароль:</label>
+                <div class="login-field-wrapper">
+                    <input type="text" name="login" class="input-field login-field"><br>
+                    <input type="password" class="input-field login-field login-margin"><br>
+                    <div>
+                        <label for="checkbox" style="font-size: 22px;">Запомнить меня?</label>
+                        <input type="checkbox" name="remember me" id="remember-me">
+                        <input type="button" value="Login" class="buttons login-button">
+                    </div>
+                </div>
+                <label for="" class="forgot-password"><a href="#">Восстановить</a>&nbsp;пароль, или пройти&nbsp;<a href="#">регистрацию</a></label>
+                
+                </form>    
+            </div>
         </div>
-    </div>
+    
 
     </div>
 </body>
